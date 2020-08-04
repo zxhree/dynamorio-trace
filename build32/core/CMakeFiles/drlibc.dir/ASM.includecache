@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../core/unix/include/syscall_mach.h
+
+/home/kumquat/dynamorio/core/arch/asm_defines.asm
+configure.h
+/home/kumquat/dynamorio/core/arch/configure.h
+
+/home/kumquat/dynamorio/core/arch/x86/x86_asm_defines.asm
+
+/home/kumquat/dynamorio/core/drlibc/drlibc_x86.asm
+../arch/asm_defines.asm
+/home/kumquat/dynamorio/core/arch/asm_defines.asm
+../arch/x86/x86_asm_defines.asm
+/home/kumquat/dynamorio/core/arch/x86/x86_asm_defines.asm
+include/syscall_mach.h
+/home/kumquat/dynamorio/core/drlibc/include/syscall_mach.h
+
+/home/kumquat/dynamorio/core/drlibc/drlibc_xarch.asm
+../arch/asm_defines.asm
+/home/kumquat/dynamorio/core/arch/asm_defines.asm
+
+configure.h
+sys/types.h
+-
+

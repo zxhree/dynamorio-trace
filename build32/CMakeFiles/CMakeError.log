@@ -1,0 +1,526 @@
+Determining size of bool failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d6302/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6302.dir/build.make CMakeFiles/cmTC_d6302.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6302.dir/DR_DO_NOT_DEFINE_bool.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d6302.dir/DR_DO_NOT_DEFINE_bool.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_bool.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_bool.c:17:22: error: ‘bool’ undeclared here (not in a function)
+ #define SIZE (sizeof(bool))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_bool.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_d6302.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d6302.dir/DR_DO_NOT_DEFINE_bool.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d6302.dir/DR_DO_NOT_DEFINE_bool.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d6302/fast' failed
+make: *** [cmTC_d6302/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_bool.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(bool))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of byte failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2e5a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e5a7.dir/build.make CMakeFiles/cmTC_2e5a7.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e5a7.dir/DR_DO_NOT_DEFINE_byte.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2e5a7.dir/DR_DO_NOT_DEFINE_byte.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_byte.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_byte.c:17:22: error: ‘byte’ undeclared here (not in a function)
+ #define SIZE (sizeof(byte))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_byte.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_2e5a7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2e5a7.dir/DR_DO_NOT_DEFINE_byte.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2e5a7.dir/DR_DO_NOT_DEFINE_byte.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2e5a7/fast' failed
+make: *** [cmTC_2e5a7/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_byte.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(byte))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of sbyte failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_10853/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10853.dir/build.make CMakeFiles/cmTC_10853.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10853.dir/DR_DO_NOT_DEFINE_sbyte.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_10853.dir/DR_DO_NOT_DEFINE_sbyte.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_sbyte.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_sbyte.c:17:22: error: ‘sbyte’ undeclared here (not in a function)
+ #define SIZE (sizeof(sbyte))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_sbyte.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_10853.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_10853.dir/DR_DO_NOT_DEFINE_sbyte.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_10853.dir/DR_DO_NOT_DEFINE_sbyte.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_10853/fast' failed
+make: *** [cmTC_10853/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_sbyte.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(sbyte))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uint32 failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_afdae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_afdae.dir/build.make CMakeFiles/cmTC_afdae.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afdae.dir/DR_DO_NOT_DEFINE_uint32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_afdae.dir/DR_DO_NOT_DEFINE_uint32.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint32.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint32.c:17:22: error: ‘uint32’ undeclared here (not in a function)
+ #define SIZE (sizeof(uint32))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint32.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_afdae.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_afdae.dir/DR_DO_NOT_DEFINE_uint32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_afdae.dir/DR_DO_NOT_DEFINE_uint32.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_afdae/fast' failed
+make: *** [cmTC_afdae/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(uint32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uint64 failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_98b2b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98b2b.dir/build.make CMakeFiles/cmTC_98b2b.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98b2b.dir/DR_DO_NOT_DEFINE_uint64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_98b2b.dir/DR_DO_NOT_DEFINE_uint64.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint64.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint64.c:17:22: error: ‘uint64’ undeclared here (not in a function)
+ #define SIZE (sizeof(uint64))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_98b2b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_98b2b.dir/DR_DO_NOT_DEFINE_uint64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_98b2b.dir/DR_DO_NOT_DEFINE_uint64.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_98b2b/fast' failed
+make: *** [cmTC_98b2b/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_uint64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(uint64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of int32 failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76477/fast"
+/usr/bin/make -f CMakeFiles/cmTC_76477.dir/build.make CMakeFiles/cmTC_76477.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76477.dir/DR_DO_NOT_DEFINE_int32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_76477.dir/DR_DO_NOT_DEFINE_int32.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int32.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int32.c:17:22: error: ‘int32’ undeclared here (not in a function)
+ #define SIZE (sizeof(int32))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int32.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_76477.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_76477.dir/DR_DO_NOT_DEFINE_int32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_76477.dir/DR_DO_NOT_DEFINE_int32.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_76477/fast' failed
+make: *** [cmTC_76477/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of int64 failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4785a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4785a.dir/build.make CMakeFiles/cmTC_4785a.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4785a.dir/DR_DO_NOT_DEFINE_int64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4785a.dir/DR_DO_NOT_DEFINE_int64.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int64.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int64.c:17:22: error: ‘int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(int64))
+                      ^
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_4785a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4785a.dir/DR_DO_NOT_DEFINE_int64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4785a.dir/DR_DO_NOT_DEFINE_int64.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4785a/fast' failed
+make: *** [cmTC_4785a/fast] Error 2
+
+/home/kumquat/dynamorio/build32/CMakeFiles/CheckTypeSize/DR_DO_NOT_DEFINE_int64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test stringop_truncation_avail failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f5a26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f5a26.dir/build.make CMakeFiles/cmTC_f5a26.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5a26.dir/src.c.o
+/usr/bin/cc   -Dstringop_truncation_avail   -Wstringop-truncation -o CMakeFiles/cmTC_f5a26.dir/src.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wstringop-truncation'
+CMakeFiles/cmTC_f5a26.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f5a26.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f5a26.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f5a26/fast' failed
+make: *** [cmTC_f5a26/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test format_truncation_avail failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0cdf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0cdf.dir/build.make CMakeFiles/cmTC_a0cdf.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0cdf.dir/src.c.o
+/usr/bin/cc   -Dformat_truncation_avail   -Wformat-truncation -o CMakeFiles/cmTC_a0cdf.dir/src.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wformat-truncation'
+CMakeFiles/cmTC_a0cdf.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a0cdf.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a0cdf.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a0cdf/fast' failed
+make: *** [cmTC_a0cdf/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test stringop_overflow_avail failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00ac3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00ac3.dir/build.make CMakeFiles/cmTC_00ac3.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00ac3.dir/src.c.o
+/usr/bin/cc   -Dstringop_overflow_avail   -Wstringop-overflow -o CMakeFiles/cmTC_00ac3.dir/src.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wstringop-overflow'
+CMakeFiles/cmTC_00ac3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_00ac3.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_00ac3.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_00ac3/fast' failed
+make: *** [cmTC_00ac3/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file linux/rseq.h exists failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68043/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68043.dir/build.make CMakeFiles/cmTC_68043.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68043.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -m32  -fno-strict-aliasing -fno-stack-protector -fvisibility=internal  -std=gnu99 -fno-unwind-tables -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable    -o CMakeFiles/cmTC_68043.dir/CheckIncludeFile.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:24: fatal error: linux/rseq.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_68043.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_68043.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_68043.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_68043/fast' failed
+make: *** [cmTC_68043/fast] Error 2
+
+
+Performing C SOURCE FILE Test implicit_fallthrough_avail failed with the following output:
+Change Dir: /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5c8fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5c8fb.dir/build.make CMakeFiles/cmTC_5c8fb.dir/build
+make[1]: Entering directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5c8fb.dir/src.c.o
+/usr/bin/cc   -m32 -Dimplicit_fallthrough_avail   -Wimplicit-fallthrough -o CMakeFiles/cmTC_5c8fb.dir/src.c.o   -c /home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wimplicit-fallthrough'
+CMakeFiles/cmTC_5c8fb.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_5c8fb.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_5c8fb.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/kumquat/dynamorio/build32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5c8fb/fast' failed
+make: *** [cmTC_5c8fb/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }

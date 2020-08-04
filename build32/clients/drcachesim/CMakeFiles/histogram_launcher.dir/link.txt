@@ -1,0 +1,4 @@
+/usr/bin/c++ -m32      -Wl,--hash-style=both  CMakeFiles/histogram_launcher.dir/tools/histogram_launcher.cpp.o CMakeFiles/histogram_launcher.dir/tests/trace_invariants.cpp.o  -o ../bin32/histogram_launcher ../lib32/release/libdrmemtrace_analyzer.a ../lib32/release/libdrmemtrace_histogram.a ../../lib32/libdrfrontendlib.a ../lib32/release/libdirectory_iterator.a ../../lib32/libdrfrontendlib.a ../../lib32/libdrlibc.a ../../lib32/libdrmemfuncs.a -lpthread 
+/usr/bin/objcopy --only-keep-debug ../bin32/histogram_launcher ../bin32/histogram_launcher.debug
+/usr/bin/objcopy --add-gnu-debuglink=../bin32/histogram_launcher.debug ../bin32/histogram_launcher
+/usr/bin/strip -g -x ../bin32/histogram_launcher

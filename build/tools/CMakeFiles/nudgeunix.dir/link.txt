@@ -1,0 +1,4 @@
+/usr/bin/cc -m64  -fno-strict-aliasing -fno-stack-protector -fvisibility=internal  -std=gnu99 -fno-unwind-tables -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable      -Wl,--hash-style=both  CMakeFiles/nudgeunix.dir/nudgeunix.c.o CMakeFiles/nudgeunix.dir/__/core/unix/nudgesig.c.o  -o ../bin64/nudgeunix 
+/usr/bin/objcopy --only-keep-debug ../bin64/nudgeunix ../bin64/nudgeunix.debug
+/usr/bin/objcopy --add-gnu-debuglink=../bin64/nudgeunix.debug ../bin64/nudgeunix
+/usr/bin/strip -g -x ../bin64/nudgeunix

@@ -1,0 +1,4 @@
+/usr/bin/cc -fPIC      -m64  -fno-strict-aliasing -fno-stack-protector -fvisibility=internal  -std=gnu99 -fno-unwind-tables -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2     -DX86_64 -DLINUX -DDR_HOST_X86 -DDR_HOST_X64 -DUSE_VISIBILITY_ATTRIBUTES -fno-stack-protector  -Xlinker -z -Xlinker now -fPIC -shared -lgcc -Wl,--hash-style=both -Xlinker -T -Xlinker "/home/kumquat/dynamorio/build/api/samples/empty.ldscript"   -Wl,--hash-style=both -shared -Wl,-soname,libempty.so -o ../bin/libempty.so CMakeFiles/empty.dir/empty.c.o ../../lib64/release/libdynamorio.so 
+/usr/bin/objcopy --only-keep-debug ../bin/libempty.so ../bin/libempty.so.debug
+/usr/bin/objcopy --add-gnu-debuglink=../bin/libempty.so.debug ../bin/libempty.so
+/usr/bin/strip -g -x ../bin/libempty.so
